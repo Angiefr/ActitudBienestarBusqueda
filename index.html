@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Buscador</title>
+</head>
+<body>
+    <header>
+        <h1>Actitud Bienestar</h1>
+        <input type="text" id="searchInput" placeholder="Buscar..." onkeydown="searchOnEnter(event)">
+        <!-- Agrega el id "categoryFilter" al elemento select -->
+        <select id="categoryFilter">
+            <option value="">Todas las categorías</option>
+            <option value="Médicos Y Profesionales">Médicos y Profesionales</option>
+            <option value="Health Coach">Health Coach</option>
+            <option value="Alimentos">Alimentos</option>
+            <option value="Farmacia">Farmacia</option>
+            <option value="Cuidado Personal">Cuidado Personal</option>
+            <option value="Home & Deco">Home & Deco</option>
+            <option value="Restaurantes y Cafés">Restaurantes y Cafés</option>
+            <option value="Actividad Física">Actividad Física</option>
+            <option value="Tiendas Saludables">Tiendas Saludables</option>
+            <option value="Clases y Cursos">Clases y Cursos</option>
+            <option value="Tiempo Libre y Ocio">Tiempo Libre y Ocio</option>
+            <!-- Agrega más opciones de categorías aquí -->
+        </select>
+        <button onclick="search()">Buscar</button>
+    </header>
+
+    <main id="resultsContainer">
+        <!-- Aquí se mostrarán los resultados -->
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
