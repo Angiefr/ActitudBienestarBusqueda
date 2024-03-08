@@ -736,7 +736,7 @@ function displayResults(results) {
         card.className = 'card';
 
         const image = document.createElement('img');
-        image.src = 'path/to/image.jpg'; // Reemplaza con la ruta de tus imágenes
+        image.src = 'ig.png'; // Reemplaza con la ruta de tus imágenes
         card.appendChild(image);
 
         const name = document.createElement('h2');
